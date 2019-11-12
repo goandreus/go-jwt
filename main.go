@@ -34,7 +34,7 @@ func protectedEndPoint(w http.HandlerFunc,r *http.Request){
 	fmt.Println("protectedEndPoint invoked")
 }
 
-func TokenVerifyMiddleWare(next http.HandlerFunc) http.HandlerFunc{
+func TokenVerifyMiddleWare(next func(w http.HandlerFunc, r *http.Request)) http.HandlerFunc {
 	fmt.Println("TokenVerifyMiddleWare")
 	return nil
 }
