@@ -23,7 +23,7 @@ func main(){
 }
 
 func signup(w http.ResponseWriter, r *http.Request)  {
- fmt.Println("signup invoked")
+	w.Write([]byte("succes called func"))
 }
 
 func login(w http.ResponseWriter,  r *http.Request)  {
